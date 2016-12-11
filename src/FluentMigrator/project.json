@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.6.2-*",
+
+  "frameworks": {
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0"
+      }
+    }
+  },
+
+  "buildOptions": {
+    "compile": [
+      "../SolutionInfo.cs"
+    ],
+    "publicSign": true,
+    "keyFile": "../FluentMigrator.snk"
+  }
+}

@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.6.2-*",
+
+  "dependencies": {
+    "FluentMigrator": "1.6.2",
+    "FluentMigrator.Runner": "1.6.2",
+    "NAnt.Core": "0.92.0"
+  },
+
+  "frameworks": {
+    "net46": {
+    }
+  },
+  "buildOptions": {
+    "compile": [
+      "../SolutionInfo.cs"
+    ]
+  }
+}

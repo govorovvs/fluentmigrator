@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.6.2-*",
+
+  "dependencies": {
+    "FluentMigrator": "1.6.2"
+  },
+
+  "frameworks": {
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0",
+        "System.Data.DataSetExtensions": "4.0.0.0",
+        "System.Configuration": "4.0.0.0",
+        "System.Xml": "4.0.0.0"
+      }
+    }
+  },
+  "buildOptions": {
+    "compile": [
+      "../SolutionInfo.cs"
+    ],
+    "publicSign": true,
+    "keyFile": "../FluentMigrator.snk"
+  }
+}

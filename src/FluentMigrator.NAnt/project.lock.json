@@ -1,0 +1,81 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "NAnt.Core/0.92.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NAnt.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NAnt.Core.dll": {}
+        }
+      },
+      "FluentMigrator/1.6.2": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "frameworkAssemblies": [
+          "System.Data"
+        ],
+        "compile": {
+          "net46/FluentMigrator.dll": {}
+        },
+        "runtime": {
+          "net46/FluentMigrator.dll": {}
+        }
+      },
+      "FluentMigrator.Runner/1.6.2": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "FluentMigrator": "1.6.2"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Xml"
+        ],
+        "compile": {
+          "net46/FluentMigrator.Runner.dll": {}
+        },
+        "runtime": {
+          "net46/FluentMigrator.Runner.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NAnt.Core/0.92.0": {
+      "sha512": "k57l5lMT6wbeOzsl98UBQMczI2aa6IzbSO9x2lz2uMQ8tl5NDWrPcrJ380pUICNow2vYXOH5ZU8/ZU3Pi/oH+A==",
+      "type": "package",
+      "path": "NAnt.Core/0.92.0",
+      "files": [
+        "NAnt.Core.0.92.0.nupkg.sha512",
+        "NAnt.Core.nuspec",
+        "lib/net40/NAnt.Core.dll"
+      ]
+    },
+    "FluentMigrator/1.6.2": {
+      "type": "project",
+      "path": "../FluentMigrator/project.json",
+      "msbuildProject": "../FluentMigrator/FluentMigrator.xproj"
+    },
+    "FluentMigrator.Runner/1.6.2": {
+      "type": "project",
+      "path": "../FluentMigrator.Runner/project.json",
+      "msbuildProject": "../FluentMigrator.Runner/FluentMigrator.Runner.xproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "FluentMigrator >= 1.6.2",
+      "FluentMigrator.Runner >= 1.6.2",
+      "NAnt.Core >= 0.92.0"
+    ],
+    ".NETFramework,Version=v4.6": []
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}

@@ -53,10 +53,10 @@ namespace FluentMigrator.Tests.Unit.Expressions
         }
 
         [Test]
-        [ExpectedException(typeof(NotSupportedException))]
         public void ReverseThrowsException()
         {
-            new DeleteColumnExpression().Reverse();
+            Assert.Throws<NotSupportedException>(
+                () => new DeleteColumnExpression().Reverse());
         }
 
         [Test]

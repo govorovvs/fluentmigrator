@@ -1,0 +1,32 @@
+{
+  "buildOptions": {
+    "compile": [
+      "../SolutionInfo.cs"
+    ],
+    "copyToOutput": [
+      "Resources/*.*",
+      "Unit/Initialization/Fixtures/*.*"
+    ]
+  },
+  "dependencies": {
+    "dotnet-test-nunit": "3.4.0-beta-3",
+    "FirebirdSql.Data.FirebirdClient": "5.6.0",
+    "FluentMigrator": "1.6.2",
+    "FluentMigrator.Console": "1.6.2",
+    "FluentMigrator.Runner": "1.6.2",
+    "FluentMigrator.SchemaDump": "1.6.2",
+    "Moq": "4.5.29",
+    "MySql.Data": "6.9.9",
+    "Npgsql": "3.1.9",
+    "NUnit": "3.5.0",
+    "Oracle.ManagedDataAccess": "12.1.24160719",
+    "Shouldly": "2.8.2",
+    "System.Data.SQLite": "1.0.103"
+  },
+  "frameworks": {
+    "net46": {
+    }
+  },
+  "version": "1.6.2-*",
+  "testRunner": "nunit"
+}

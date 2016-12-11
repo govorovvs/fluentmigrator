@@ -1,0 +1,41 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "FluentMigrator/1.6.2": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "frameworkAssemblies": [
+          "System.Data"
+        ],
+        "compile": {
+          "net46/FluentMigrator.dll": {}
+        },
+        "runtime": {
+          "net46/FluentMigrator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FluentMigrator/1.6.2": {
+      "type": "project",
+      "path": "../FluentMigrator/project.json",
+      "msbuildProject": "../FluentMigrator/FluentMigrator.xproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "FluentMigrator >= 1.6.2"
+    ],
+    ".NETFramework,Version=v4.6": [
+      "System.Configuration >= 4.0.0",
+      "System.Data >= 4.0.0",
+      "System.Data.DataSetExtensions >= 4.0.0",
+      "System.Xml >= 4.0.0"
+    ]
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}
